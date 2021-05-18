@@ -36,6 +36,8 @@ Things you may want to cover:
 
 - has_many :posts
 - has_many :comments
+- has_many :room_users
+- has_many :rooms,through: :room_users
 
 ## prototypes テーブル
 
@@ -48,7 +50,7 @@ Things you may want to cover:
 
 ### Association
 
-- belongs_to :users
+- belongs_to :user
 - has_many :comments 
 
 ## comments テーブル
@@ -61,8 +63,8 @@ Things you may want to cover:
 
 ### Association
 
-- belongs_to :users
-- belongs_to :posts
+- belongs_to :user
+- belongs_to :post
 
 ## likes table
 
@@ -73,8 +75,8 @@ Things you may want to cover:
 
 ## Association
 
-- belongs_to :users
-- belongs_to :posts 
+- belongs_to :user
+- belongs_to :post
 
 ## chat_room_users
 |chat_room    |references|null: false, foreign_key: true|
