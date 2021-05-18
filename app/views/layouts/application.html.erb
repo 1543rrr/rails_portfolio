@@ -10,12 +10,12 @@
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700,900&display=swap" rel="stylesheet">
   </head>
 
-  <body>
+  <body background="haikei_jpeg.jpeg">
     <header class="header">
       <div class="inner">
         <div class="nav">
         <div class="nav__left">
-            <%# <%= link_to image_tag("logo.png", class: :logo), root_path %>
+            <%= link_to image_tag("top_logo.png", class: :logo), root_path %>
           </div>
           <%# ログインしているときは以下を表示するようにしましょう %>
            <% if user_signed_in? %>
