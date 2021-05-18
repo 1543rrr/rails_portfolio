@@ -52,11 +52,11 @@ class PostsController < ApplicationController
     
   # end
   
-  # private
+  private
 
-  # def post_params
-    # params.require(:post).permit(:title, :catch, :concept, :image).merge(user_id: current_user.id)
-  # end
+  def post_params
+    params.require(:post).permit(:title, :catch, :concept, :image).merge(user_id: current_user.id)
+  end
 
   # def set_users
     # @users = Users.find(post_params)
